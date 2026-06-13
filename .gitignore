@@ -1,0 +1,289 @@
+# =============================================================================
+# .gitignore — macOS · Python · C · C++
+# =============================================================================
+
+
+# =============================================================================
+# macOS
+# =============================================================================
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+
+# Xcode / macOS build artifacts
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+
+
+# =============================================================================
+# Python
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+.pdm.toml
+__pypackages__/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# mypy / pyright / pytype
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyright/
+.pytype/
+
+# Ruff
+.ruff_cache/
+
+# Environments / secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# Spyder project settings
+.spyderproject.db
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs
+/site
+
+# PyInstaller
+*.manifest
+*.spec
+
+
+# =============================================================================
+# C / C++
+# =============================================================================
+
+# Compiled object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Libraries (static and shared)
+*.lib
+*.a
+*.la
+*.lo
+*.dylib
+*.so
+*.so.*
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug / core dumps
+*.dSYM/
+*.su
+*.idb
+*.pdb
+core
+core.*
+
+# Linker output
+*.map
+*.exp
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+cmake_uninstall.cmake
+install_manifest.txt
+CTestTestfile.cmake
+_deps/
+CMakeUserPresets.json
+
+# Autotools / Make
+Makefile.in
+/autom4te.cache
+/aclocal.m4
+/compile
+/configure
+/depcomp
+/install-sh
+/missing
+/stamp-h1
+
+# Ninja
+.ninja_deps
+.ninja_log
+build.ninja
+
+# Conan (C/C++ package manager)
+conanbuildinfo.*
+conaninfo.txt
+graph_info.json
+.conan/
+
+# vcpkg
+vcpkg_installed/
+
+# Generated dependency files
+*.d
+
+
+# =============================================================================
+# Editors & IDEs
+# =============================================================================
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.template
+
+# JetBrains (CLion, PyCharm)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Vim / Neovim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+
+# =============================================================================
+# Miscellaneous
+# =============================================================================
+
+# Logs
+*.log
+logs/
+
+# Compiled binaries in bin/
+bin/
+!bin/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.bak
+*.orig
+
+# Archives
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+
+# Generated docs
+docs/_build/
+site/

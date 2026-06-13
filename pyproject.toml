@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bernini"
+version = "0.1.0"
+description = "Bernini: unified video / image generation and editing inference (Wan2.2-based)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+
+dependencies = [
+    "torch>=2.4.0",
+    "diffusers==0.35.2",
+    "accelerate==0.34.2",
+    "transformers==4.57.3",
+    "safetensors",
+    "einops",
+    "numpy",
+    "Pillow",
+    "tqdm",
+    "ftfy",
+    "decord",
+    "imageio",
+    "imageio-ffmpeg",
+]
+
+[project.optional-dependencies]
+# Multi-GPU sequence parallel (Ulysses). Open-VeOmni requires Python 3.11.
+parallel = ["veomni"]
+# Prompt engineering via an OpenAI-compatible endpoint.
+pe = ["openai"]
+
+[tool.setuptools.packages.find]
+include = ["bernini*"]

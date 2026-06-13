@@ -1,0 +1,4 @@
+*.o
+*.a
+bernini
+tests/test_core
